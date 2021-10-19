@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="680" prefWidth="360" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.ContactsController">
+    <children>
+        <BorderPane layoutX="-4.0" prefHeight="680" prefWidth="360">
+            <bottom>
+                <GridPane prefHeight="62.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                            <center>
+                                <Button mnemonicParsing="false" text="&lt;" BorderPane.alignment="CENTER" />
+                            </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="51.0" prefWidth="102.0" GridPane.columnIndex="1">
+                            <center>
+                                <Button mnemonicParsing="false" text="O" BorderPane.alignment="CENTER" />
+                            </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                            <center>
+                                <Button mnemonicParsing="false" text="=" BorderPane.alignment="CENTER" />
+                            </center>
+                        </BorderPane>
+                    </children>
+                </GridPane>
+            </bottom>
+         <center>
+                <TabPane prefHeight="488.0" prefWidth="305.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                    <tabs>
+                        <Tab id="tabPhone" styleClass="tabs" text="Dialer">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="72.0" prefWidth="360.0">
+                                 <children>
+                                    <TextField layoutX="7.0" layoutY="14.0" prefHeight="44.0" prefWidth="354.0" />
+                                 </children>
+                              </AnchorPane>
+                              <BorderPane layoutX="5.0" layoutY="78.0" prefHeight="409.0" prefWidth="354.0">
+                                 <center>
+                                    <GridPane prefHeight="463.0" prefWidth="354.0" BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="1" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="2" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="3" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="4" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="5" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="6" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="7" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="8" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="9" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="*" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="0" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="#" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <center>
+                                                <Button mnemonicParsing="false" text="call" BorderPane.alignment="CENTER" />
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                       </children>
+                                    </GridPane>
+                                 </center>
+                              </BorderPane>
+                           </children></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab id="tabContact" styleClass="tabs" text="Contacts">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="532.0" prefWidth="360.0">
+                           <children>
+                              <VBox layoutX="2.0" layoutY="-4.0" prefHeight="565.0" prefWidth="360.0">
+                                 <children>
+                                    <HBox prefHeight="40.0" prefWidth="360.0">
+                                       <children>
+                                          <TextField prefHeight="39.0" prefWidth="306.0" />
+                                          <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="54.0" text="search" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab id="tabLog" styleClass="tabs" text="Call Logs">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="360.0">
+                           <children>
+                              <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="561.0" prefWidth="360.0" />
+                           </children></AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
