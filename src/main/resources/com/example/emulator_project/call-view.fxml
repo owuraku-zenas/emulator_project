@@ -1,51 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 
-<AnchorPane prefHeight="680" prefWidth="360" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.ContactsController">
+
+<AnchorPane prefHeight="680" prefWidth="360" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.ContactsController">
     <children>
         <BorderPane layoutX="-4.0" prefHeight="680" prefWidth="360">
-            <bottom>
-                <GridPane prefHeight="62.0" prefWidth="360.0" BorderPane.alignment="CENTER">
-                    <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                    <children>
-                        <BorderPane prefHeight="200.0" prefWidth="200.0">
-                            <center>
-                                <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
-                            </center>
-                        </BorderPane>
-                        <BorderPane prefHeight="51.0" prefWidth="102.0" GridPane.columnIndex="1">
-                            <center>
-                                <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
-                            </center>
-                        </BorderPane>
-                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-                            <center>
-                                <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
-                            </center>
-                        </BorderPane>
-                    </children>
-                </GridPane>
-            </bottom>
          <top>
-            <AnchorPane prefHeight="92.0" prefWidth="360.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Label layoutX="5.0" layoutY="14.0" prefHeight="62.0" prefWidth="357.0" text="Label" />
-               </children></AnchorPane>
+             <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                 <children>
+                     <Label text="17:32" />
+                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@images/icons8-whatsapp-32.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="68.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@images/icons8-youtube-30.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@images/icons8-signal-48.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@images/icons8-signal-48.png" />
+                         </image>
+                     </ImageView>
+                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@images/icons8-battery-level-48.png" />
+                         </image>
+                     </ImageView>
+                 </children>
+             </Pane>
          </top>
          <center>
             <GridPane BorderPane.alignment="CENTER">
@@ -129,6 +124,27 @@
                </children>
             </GridPane>
          </center>
+         <bottom>
+             <HBox prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                 <children>
+                     <Pane prefHeight="200.0" prefWidth="200.0">
+                         <children>
+                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="|||" />
+                         </children>
+                     </Pane>
+                     <Pane prefHeight="200.0" prefWidth="200.0">
+                         <children>
+                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="121.0" text="O" />
+                         </children>
+                     </Pane>
+                     <Pane prefHeight="200.0" prefWidth="200.0">
+                         <children>
+                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
+                         </children>
+                     </Pane>
+                 </children>
+             </HBox>
+         </bottom>
         </BorderPane>
     </children>
 </AnchorPane>
