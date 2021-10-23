@@ -1,8 +1,8 @@
 package com.example.emulator_project;
 
+import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.Views;
 import javafx.application.Application;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -11,10 +11,11 @@ public class MainApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Scene scene = SceneManager.getInstance().loadScene(Views.CALL_VIEW);
-        stage.setScene(scene);
         stage.setTitle("Android Phone");
-        stage.show();
+        SceneManager sm = SceneManager.getInstance().setContext(MainApplication.class);
+        sm.setStage(stage);
+        sm.setSceneFromView(Views.HOME_VIEW);
+        sm.load();
     }
 
     public static void main(String[] args) {

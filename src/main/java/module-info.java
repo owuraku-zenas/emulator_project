@@ -14,4 +14,6 @@ module com.example.emulator_project {
     exports com.example.emulator_project;
     exports com.example.emulator_project.controllers;
     opens com.example.emulator_project.controllers to javafx.fxml;
+    exports com.example.emulator_project.utils;
+    opens com.example.emulator_project.utils to javafx.fxml;
 }
