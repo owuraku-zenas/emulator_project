@@ -1,6 +1,7 @@
 package com.example.emulator_project.controllers;
 
-public class ContactsController {
+import javafx.event.ActionEvent;
 
+public class ContactsController extends NavigationController {
 
 }
