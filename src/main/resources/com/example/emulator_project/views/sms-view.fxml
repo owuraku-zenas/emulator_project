@@ -16,337 +16,374 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Circle?>
 
-<AnchorPane prefHeight="680.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.SMSController">
-   <children>
-      <BorderPane prefHeight="680.0" prefWidth="360.0">
-         <top>
-             <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
-                 <children>
-                     <Label text="17:32" />
-                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
-                         <image>
-                             <Image url="@../images/icons8-whatsapp-32.png" />
-                         </image>
-                     </ImageView>
-                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="68.0" pickOnBounds="true" preserveRatio="true">
-                         <image>
-                             <Image url="@../images/icons8-youtube-30.png" />
-                         </image>
-                     </ImageView>
-                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
-                         <image>
-                             <Image url="@../images/icons8-signal-48.png" />
-                         </image>
-                     </ImageView>
-                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
-                         <image>
-                             <Image url="@../images/icons8-signal-48.png" />
-                         </image>
-                     </ImageView>
-                     <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
-                         <image>
-                             <Image url="@../images/icons8-battery-level-48.png" />
-                         </image>
-                     </ImageView>
-                 </children>
-             </Pane>
-         </top>
-         <bottom>
-             <HBox prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
-                 <children>
-                     <Pane prefHeight="200.0" prefWidth="200.0">
-                         <children>
-                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="|||" />
-                         </children>
-                     </Pane>
-                     <Pane prefHeight="200.0" prefWidth="200.0">
-                         <children>
-                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="121.0" text="O" />
-                         </children>
-                     </Pane>
-                     <Pane prefHeight="200.0" prefWidth="200.0">
-                         <children>
-                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
-                         </children>
-                     </Pane>
-                 </children>
-             </HBox>
-         </bottom>
-         <center>
-            <GridPane BorderPane.alignment="CENTER">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;">
-                     <children>
-                        <Circle radius="36.0" smooth="false" strokeType="INSIDE">
-                           <stroke>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </stroke>
-                           <fill>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </fill>
-                        </Circle>
-                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; -fx-background-color: #;">
-                           <children>
-                              <Label layoutX="82.0" layoutY="28.0" text="Hello" />
-                           </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="680.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="com.example.emulator_project.controllers.SMSController">
+    <children>
+        <BorderPane prefHeight="680.0" prefWidth="360.0">
+            <top>
+                <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;"
+                      BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="17:32"/>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-whatsapp-32.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="68.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-youtube-30.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-signal-48.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-signal-48.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-battery-level-48.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <HBox prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0"
+                                        prefWidth="120.0" text="|||"/>
+                            </children>
                         </Pane>
-                     </children>
-                  </HBox>
-                   <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;" GridPane.rowIndex="1">
-                       <children>
-                           <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; -fx-background-color: #;">
-                               <children>
-                                   <Label layoutX="82.0" layoutY="28.0" text="Hi" />
-                               </children>
-                           </Pane>
-                           <Circle radius="36.0" smooth="false" strokeType="INSIDE">
-                               <stroke>
-                                   <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                       <stops>
-                                           <Stop>
-                                               <color>
-                                                   <Color />
-                                               </color>
-                                           </Stop>
-                                           <Stop offset="1.0">
-                                               <color>
-                                                   <Color red="1.0" green="1.0" blue="1.0" />
-                                               </color>
-                                           </Stop>
-                                       </stops>
-                                   </RadialGradient>
-                               </stroke>
-                               <fill>
-                                   <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                       <stops>
-                                           <Stop>
-                                               <color>
-                                                   <Color />
-                                               </color>
-                                           </Stop>
-                                           <Stop offset="1.0">
-                                               <color>
-                                                   <Color red="0.8156862854957581" green="0.6666666865348816" blue="0.6666666865348816" />
-                                               </color>
-                                           </Stop>
-                                       </stops>
-                                   </RadialGradient>
-                               </fill>
-                           </Circle>
-                       </children>
-                   </HBox>
-                  <HBox layoutX="10.0" layoutY="6.0" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;" GridPane.rowIndex="2">
-                     <children>
-                        <Circle radius="36.0" smooth="false" strokeType="INSIDE">
-                           <stroke>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </stroke>
-                           <fill>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </fill>
-                        </Circle>
-                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; -fx-background-color: #;">
-                           <children>
-                              <Label layoutX="82.0" layoutY="28.0" text="How are you?" />
-                           </children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0"
+                                        prefWidth="121.0" text="O"/>
+                            </children>
                         </Pane>
-                     </children>
-                  </HBox>
-                  <HBox layoutX="10.0" layoutY="212.0" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;" GridPane.rowIndex="4">
-                     <children>
-                        <Circle radius="36.0" smooth="false" strokeType="INSIDE">
-                           <stroke>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </stroke>
-                           <fill>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </fill>
-                        </Circle>
-                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; -fx-background-color: #;">
-                           <children>
-                              <Label layoutX="82.0" layoutY="28.0" text="That's great" />
-                           </children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0"
+                                        prefWidth="120.0" text="&lt;"/>
+                            </children>
                         </Pane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="109.0" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;" GridPane.rowIndex="3">
-                     <children>
-                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; -fx-background-color: #;">
-                           <children>
-                              <Label layoutX="82.0" layoutY="28.0" text="I'm fine" />
-                           </children>
-                        </Pane>
-                        <Circle radius="36.0" smooth="false" strokeType="INSIDE">
-                           <stroke>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </stroke>
-                           <fill>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="0.8156862854957581" green="0.6666666865348816" blue="0.6666666865348816" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </fill>
-                        </Circle>
-                     </children>
-                  </HBox>
-                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="109.0" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;" GridPane.rowIndex="5">
-                     <children>
-                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; -fx-background-color: #;">
-                           <children>
-                              <Label layoutX="82.0" layoutY="28.0" text="Yh" />
-                           </children>
-                        </Pane>
-                        <Circle radius="36.0" smooth="false" strokeType="INSIDE">
-                           <stroke>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </stroke>
-                           <fill>
-                              <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43" focusDistance="0.2790697674418605" radius="0.4418604651162791">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="0.8156862854957581" green="0.6666666865348816" blue="0.6666666865348816" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </RadialGradient>
-                           </fill>
-                        </Circle>
-                     </children>
-                  </HBox>
-               </children>
-            </GridPane>
-         </center>
-      </BorderPane>
-   </children>
+                    </children>
+                </HBox>
+
+            </bottom>
+            <center>
+                <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;">
+                            <children>
+                                <Circle radius="36.0" smooth="false" strokeType="INSIDE">
+                                    <stroke>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </stroke>
+                                    <fill>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </fill>
+                                </Circle>
+                                <Pane prefHeight="200.0" prefWidth="200.0"
+                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                    <children>
+                                        <Label layoutX="82.0" layoutY="28.0" text="Hello"/>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;"
+                              GridPane.rowIndex="1">
+                            <children>
+                                <Pane prefHeight="200.0" prefWidth="200.0"
+                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                    <children>
+                                        <Label layoutX="82.0" layoutY="28.0" text="Hi"/>
+                                    </children>
+                                </Pane>
+                                <Circle radius="36.0" smooth="false" strokeType="INSIDE">
+                                    <stroke>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </stroke>
+                                    <fill>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.8156862854957581" green="0.6666666865348816"
+                                                               blue="0.6666666865348816"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </fill>
+                                </Circle>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="6.0" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 20;"
+                              GridPane.rowIndex="2">
+                            <children>
+                                <Circle radius="36.0" smooth="false" strokeType="INSIDE">
+                                    <stroke>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </stroke>
+                                    <fill>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </fill>
+                                </Circle>
+                                <Pane prefHeight="200.0" prefWidth="200.0"
+                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                    <children>
+                                        <Label layoutX="82.0" layoutY="28.0" text="How are you?"/>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="212.0" prefHeight="100.0" prefWidth="200.0"
+                              style="-fx-padding: 20;" GridPane.rowIndex="4">
+                            <children>
+                                <Circle radius="36.0" smooth="false" strokeType="INSIDE">
+                                    <stroke>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </stroke>
+                                    <fill>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </fill>
+                                </Circle>
+                                <Pane prefHeight="200.0" prefWidth="200.0"
+                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                    <children>
+                                        <Label layoutX="82.0" layoutY="28.0" text="That's great"/>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="109.0" prefHeight="100.0" prefWidth="200.0"
+                              style="-fx-padding: 20;" GridPane.rowIndex="3">
+                            <children>
+                                <Pane prefHeight="200.0" prefWidth="200.0"
+                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                    <children>
+                                        <Label layoutX="82.0" layoutY="28.0" text="I'm fine"/>
+                                    </children>
+                                </Pane>
+                                <Circle radius="36.0" smooth="false" strokeType="INSIDE">
+                                    <stroke>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </stroke>
+                                    <fill>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.8156862854957581" green="0.6666666865348816"
+                                                               blue="0.6666666865348816"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </fill>
+                                </Circle>
+                            </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="109.0" prefHeight="100.0" prefWidth="200.0"
+                              style="-fx-padding: 20;" GridPane.rowIndex="5">
+                            <children>
+                                <Pane prefHeight="200.0" prefWidth="200.0"
+                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                    <children>
+                                        <Label layoutX="82.0" layoutY="28.0" text="Yh"/>
+                                    </children>
+                                </Pane>
+                                <Circle radius="36.0" smooth="false" strokeType="INSIDE">
+                                    <stroke>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </stroke>
+                                    <fill>
+                                        <RadialGradient centerX="0.5" centerY="0.49523809523809526" focusAngle="-18.43"
+                                                        focusDistance="0.2790697674418605" radius="0.4418604651162791">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color/>
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.8156862854957581" green="0.6666666865348816"
+                                                               blue="0.6666666865348816"/>
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </fill>
+                                </Circle>
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </children>
 </AnchorPane>

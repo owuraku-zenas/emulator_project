@@ -158,17 +158,17 @@
                  <children>
                      <Pane prefHeight="200.0" prefWidth="200.0">
                          <children>
-                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="|||" />
+                             <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0" prefWidth="120.0" text="|||" />
                          </children>
                      </Pane>
                      <Pane prefHeight="200.0" prefWidth="200.0">
                          <children>
-                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="121.0" text="O" />
+                             <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0" prefWidth="121.0" text="O" />
                          </children>
                      </Pane>
                      <Pane prefHeight="200.0" prefWidth="200.0">
                          <children>
-                             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
+                             <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
                          </children>
                      </Pane>
                  </children>
