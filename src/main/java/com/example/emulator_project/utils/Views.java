@@ -6,5 +6,7 @@ public enum Views {
     CALL_VIEW,
     SMS_VIEW,
     TIME_VIEW,
-    CALENDAR_VIEW
+    CALENDAR_VIEW,
+    MENU_VIEW,
+    TASK_VIEW,
 }
