@@ -1,3 +1,6 @@
+/**
+ *
+ */
 module com.example.emulator_project {
     requires javafx.controls;
     requires javafx.fxml;
@@ -8,7 +11,6 @@ module com.example.emulator_project {
     requires validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-//    requires eu.hansolo.tilesfx;
 
     opens com.example.emulator_project to javafx.fxml;
     exports com.example.emulator_project;

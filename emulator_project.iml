@@ -8,12 +8,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="14" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="16" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="AnimateFX-1.2.1" level="project" />
-    <orderEntry type="library" exported="" name="sqlite-jdbc-3.36.0.2" level="project" />
-    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.27" level="project" />
-    <orderEntry type="library" exported="" name="JavaFX17" level="application" />
+    <orderEntry type="library" name="AnimateFX-1.2.1" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.36.0.2" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.27" level="project" />
+    <orderEntry type="library" name="JavaFX17" level="application" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:17.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:17.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:17.0.1" level="project" />
@@ -32,7 +32,6 @@
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-core:12.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" level="project" />
-    <orderEntry type="library" name="Maven: eu.hansolo:tilesfx:17.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
