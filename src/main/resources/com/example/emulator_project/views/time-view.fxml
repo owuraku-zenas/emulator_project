@@ -9,43 +9,36 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="680.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17"
-            fx:controller="com.example.emulator_project.controllers.TimeController">
+<AnchorPane prefHeight="680.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.TimeController">
     <children>
         <BorderPane prefHeight="680.0" prefWidth="360.0">
             <top>
-                <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;"
-                      BorderPane.alignment="CENTER">
+                <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
                     <children>
-                        <Label text="17:32"/>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <Label text="17:32" />
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-whatsapp-32.png"/>
+                                <Image url="@../images/icons8-whatsapp-32.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="68.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="68.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-youtube-30.png"/>
+                                <Image url="@../images/icons8-youtube-30.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-signal-48.png"/>
+                                <Image url="@../images/icons8-signal-48.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-signal-48.png"/>
+                                <Image url="@../images/icons8-signal-48.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-battery-level-48.png"/>
+                                <Image url="@../images/icons8-battery-level-48.png" />
                             </image>
                         </ImageView>
                     </children>
@@ -56,20 +49,17 @@
                     <children>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0"
-                                        prefWidth="120.0" text="|||"/>
+                                <Button mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0" prefWidth="120.0" text="|||" />
                             </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0"
-                                        prefWidth="121.0" text="O"/>
+                                <Button mnemonicParsing="false" onAction="#openHome" prefHeight="45.0" prefWidth="121.0" text="O" />
                             </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0"
-                                        prefWidth="120.0" text="&lt;"/>
+                                <Button layoutX="1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
                             </children>
                         </Pane>
                     </children>
@@ -78,10 +68,9 @@
             <center>
                 <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <children>
-                        <ImageView fitHeight="259.0" fitWidth="253.0" layoutX="54.0" layoutY="59.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <ImageView fitHeight="259.0" fitWidth="253.0" layoutX="54.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/102-1022391_clock-vector-png-analog-clock-no-number-transparent.png"/>
+                                <Image url="@../images/102-1022391_clock-vector-png-analog-clock-no-number-transparent.png" />
                             </image>
                         </ImageView>
                     </children>

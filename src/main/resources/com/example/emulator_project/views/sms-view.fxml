@@ -24,7 +24,7 @@
                 <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;"
                       BorderPane.alignment="CENTER">
                     <children>
-                        <Label text="17:32"/>
+                        <Label layoutX="7.0" layoutY="1.0" text="17:32"/>
                         <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true"
                                    preserveRatio="true">
                             <image>
@@ -37,19 +37,19 @@
                                 <Image url="@../images/icons8-youtube-30.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true"
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="269.0" layoutY="-1.0" pickOnBounds="true"
                                    preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-signal-48.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true"
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="304.0" layoutY="-1.0" pickOnBounds="true"
                                    preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-signal-48.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true"
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="337.0" layoutY="-1.0" pickOnBounds="true"
                                    preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-battery-level-48.png"/>
@@ -57,25 +57,26 @@
                         </ImageView>
                     </children>
                 </Pane>
+
             </top>
             <bottom>
                 <HBox prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
                     <children>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0"
+                                <Button mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0"
                                         prefWidth="120.0" text="|||"/>
                             </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0"
-                                        prefWidth="121.0" text="O"/>
+                                <Button mnemonicParsing="false" onAction="#openHome" prefHeight="45.0" prefWidth="121.0"
+                                        text="O"/>
                             </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0"
+                                <Button layoutX="1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0"
                                         prefWidth="120.0" text="&lt;"/>
                             </children>
                         </Pane>
@@ -230,8 +231,7 @@
                                         </RadialGradient>
                                     </fill>
                                 </Circle>
-                                <Pane prefHeight="200.0" prefWidth="200.0"
-                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5;">
                                     <children>
                                         <Label layoutX="82.0" layoutY="28.0" text="How are you?"/>
                                     </children>
@@ -277,8 +277,7 @@
                                         </RadialGradient>
                                     </fill>
                                 </Circle>
-                                <Pane prefHeight="200.0" prefWidth="200.0"
-                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; ">
                                     <children>
                                         <Label layoutX="82.0" layoutY="28.0" text="That's great"/>
                                     </children>
@@ -288,8 +287,7 @@
                         <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="109.0" prefHeight="100.0" prefWidth="200.0"
                               style="-fx-padding: 20;" GridPane.rowIndex="3">
                             <children>
-                                <Pane prefHeight="200.0" prefWidth="200.0"
-                                      style="-fx-padding: 5; -fx-background-color: #;">
+                                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 5; ">
                                     <children>
                                         <Label layoutX="82.0" layoutY="28.0" text="I'm fine"/>
                                     </children>
