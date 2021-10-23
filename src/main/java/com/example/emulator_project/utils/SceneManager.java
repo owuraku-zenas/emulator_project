@@ -40,7 +40,7 @@ public class SceneManager {
         return this.currentScene;
     }
 
-    public Scene setSceneFromView(Views view) {
+    public FXMLLoader setSceneFromView(Views view) {
         FXMLLoader nextFXML = null;
 
         try {
@@ -58,7 +58,6 @@ public class SceneManager {
             } else if (view == Views.TIME_VIEW) {
                 nextFXML = new FXMLLoader(this.context.getResource("views/time-view.fxml"));
             } else {
-                return this.getCurrentScene();
             }
 
             this.setCurrentScene(new Scene(nextFXML.load(), 360, 680));
@@ -67,7 +66,7 @@ public class SceneManager {
             e.printStackTrace();
         }
 
-        return this.getCurrentScene();
+        return nextFXML;
     }
 
 
@@ -80,15 +79,15 @@ public class SceneManager {
         this.mainStage.show();
     }
 
-    public void switchSceneFromEvent(Event event, Views callView) {
-        Stage parent = getStageFromEvent(event);
-        this.setStage(parent);
-        this.setSceneFromView(callView);
-        this.load();
+    public FXMLLoader switchSceneFromEvent(Event event, Views callView) {
+        Stage stage = getStageFromEvent(event);
+        this.setStage(stage);
+        FXMLLoader fx = this.setSceneFromView(callView);
+        return fx;
     }
 
-    public SceneManager setContext(Class<? extends Application> mainApplicationClass) {
-        this.context = (mainApplicationClass);
+    public SceneManager setContext(Class<? extends Application> applicationContext) {
+        this.context = (applicationContext);
         return this;
     }
 }
