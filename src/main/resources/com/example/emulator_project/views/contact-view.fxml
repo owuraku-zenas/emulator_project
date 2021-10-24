@@ -180,28 +180,28 @@
             <top>
                 <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
                     <children>
-                        <Label layoutX="7.0" layoutY="1.0" text="17:32" />
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
+                        <Label layoutX="11.0" layoutY="1.0" text="17:32" />
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="51.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-whatsapp-32.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="68.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="72.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-youtube-30.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="269.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="273.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-signal-48.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="304.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="308.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-signal-48.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="337.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="341.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-battery-level-48.png" />
                             </image>

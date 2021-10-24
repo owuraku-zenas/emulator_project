@@ -15,7 +15,7 @@
             <top>
                 <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
                     <children>
-                        <Label text="17:32" />
+                        <Label layoutX="7.0" layoutY="1.0" text="17:32" />
                         <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-whatsapp-32.png" />
@@ -26,17 +26,17 @@
                                 <Image url="@../images/icons8-youtube-30.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="258.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="269.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-signal-48.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="293.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="304.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-signal-48.png" />
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="326.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="337.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/icons8-battery-level-48.png" />
                             </image>
