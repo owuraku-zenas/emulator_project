@@ -97,6 +97,12 @@
             <version>3.36.0.2</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>2.7</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

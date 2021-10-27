@@ -1,6 +1,6 @@
 package com.example.emulator_project.utils;
 
-public enum Views {
+public enum ViewType {
     HOME_VIEW,
     CONTACT_VIEW,
     CALL_VIEW,

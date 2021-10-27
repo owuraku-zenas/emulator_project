@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
@@ -21,9 +22,9 @@
     <children>
         <BorderPane layoutX="-4.0" prefHeight="680" prefWidth="367.0">
             <center>
-                <TabPane prefHeight="488.0" prefWidth="305.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="103.0" BorderPane.alignment="CENTER">
+                <TabPane fx:id="tabPane" prefHeight="488.0" prefWidth="305.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="103.0" BorderPane.alignment="CENTER">
                     <tabs>
-                        <Tab id="tabPhone" styleClass="tabs" text="Dialer">
+                        <Tab id="dialerTab" fx:id="dialerTab" styleClass="tabs" text="Dialer">
                             <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                     <children>
@@ -123,11 +124,11 @@
                                 </AnchorPane>
                             </content>
                         </Tab>
-                        <Tab id="tabContact" styleClass="tabs" text="Contacts">
+                        <Tab id="contactsTab" fx:id="contactsTab" styleClass="tabs" text="Contacts">
                             <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="532.0" prefWidth="360.0">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="367.0">
                                     <children>
-                                        <VBox layoutX="2.0" layoutY="-4.0" prefHeight="565.0" prefWidth="360.0">
+                                        <VBox layoutX="4.0" prefHeight="586.0" prefWidth="363.0">
                                             <children>
                                                 <HBox prefHeight="40.0" prefWidth="360.0">
                                                     <children>
@@ -138,13 +139,26 @@
                                                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                                     </padding>
                                                 </HBox>
+                                    <ScrollPane fx:id="contactsPane" hbarPolicy="NEVER" prefHeight="501.0" prefWidth="363.0" vbarPolicy="NEVER" VBox.vgrow="NEVER">
+                                       <content>
+                                          <VBox fx:id="contactsPaneVBox" prefHeight="489.0" prefWidth="359.0" spacing="5.0">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content></ScrollPane>
+                                    <Button fx:id="newContactButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createNewContact" prefHeight="40.0" prefWidth="343.0" text="Add New Contact +">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
                                             </children>
                                         </VBox>
                                     </children>
                                 </AnchorPane>
                             </content>
                         </Tab>
-                        <Tab id="tabLog" styleClass="tabs" text="Call Logs">
+                        <Tab id="callLogsTab" fx:id="callLogTab" styleClass="tabs" text="Call Logs">
                             <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="360.0">
                                     <children>
