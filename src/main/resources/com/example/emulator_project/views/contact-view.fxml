@@ -1,170 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-
-<AnchorPane prefHeight="680" prefWidth="360" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.ContactsController">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="680" prefWidth="360" xmlns="http://javafx.com/javafx/17"
+            fx:controller="com.example.emulator_project.controllers.ContactsController">
     <children>
         <BorderPane layoutX="-4.0" prefHeight="680" prefWidth="367.0">
             <center>
-                <TabPane fx:id="tabPane" prefHeight="488.0" prefWidth="305.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="103.0" BorderPane.alignment="CENTER">
+                <TabPane fx:id="tabPane" prefHeight="488.0" prefWidth="305.0" tabClosingPolicy="UNAVAILABLE"
+                         tabMinWidth="103.0" BorderPane.alignment="CENTER">
                     <tabs>
                         <Tab id="dialerTab" fx:id="dialerTab" styleClass="tabs" text="Dialer">
                             <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                    <children>
-                                        <AnchorPane prefHeight="72.0" prefWidth="360.0">
-                                            <children>
-                                                <TextField fx:id="dialInputField" layoutX="8.0" layoutY="14.0" prefHeight="44.0" prefWidth="354.0" />
-                                            </children>
-                                        </AnchorPane>
-                                        <BorderPane layoutX="5.0" layoutY="78.0" prefHeight="409.0" prefWidth="354.0">
-                                            <center>
-                                                <GridPane prefHeight="463.0" prefWidth="354.0" BorderPane.alignment="CENTER">
-                                                    <columnConstraints>
-                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                    </columnConstraints>
-                                                    <rowConstraints>
-                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                    </rowConstraints>
-                                                    <children>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="1" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="2" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="3" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="4" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="5" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="6" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="7" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="8" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="9" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="*" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="0" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#handleButtonClick" text="#" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
-                                                            <center>
-                                                                <Button mnemonicParsing="false" onAction="#makePhoneCall" text="call" BorderPane.alignment="CENTER" />
-                                                            </center>
-                                                        </BorderPane>
-                                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                    </children>
-                                                </GridPane>
-                                            </center>
-                                        </BorderPane>
-                                    </children>
-                                </AnchorPane>
+                                <fx:include source="tabs/dialer-tab.fxml"/>
                             </content>
                         </Tab>
                         <Tab id="contactsTab" fx:id="contactsTab" styleClass="tabs" text="Contacts">
                             <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="367.0">
-                                    <children>
-                                        <VBox layoutX="4.0" prefHeight="586.0" prefWidth="363.0">
-                                            <children>
-                                                <HBox prefHeight="40.0" prefWidth="360.0">
-                                                    <children>
-                                                        <TextField prefHeight="24.0" prefWidth="277.0" />
-                                                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="71.0" text="search" />
-                                                    </children>
-                                                    <padding>
-                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                                    </padding>
-                                                </HBox>
-                                    <ScrollPane fx:id="contactsPane" hbarPolicy="NEVER" prefHeight="501.0" prefWidth="363.0" vbarPolicy="NEVER" VBox.vgrow="NEVER">
-                                       <content>
-                                          <VBox fx:id="contactsPaneVBox" prefHeight="489.0" prefWidth="359.0" spacing="5.0">
-                                             <padding>
-                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content></ScrollPane>
-                                    <Button fx:id="newContactButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createNewContact" prefHeight="40.0" prefWidth="343.0" text="Add New Contact +">
-                                       <VBox.margin>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </VBox.margin>
-                                    </Button>
-                                            </children>
-                                        </VBox>
-                                    </children>
-                                </AnchorPane>
+                                <fx:include source="tabs/contacts-tab.fxml"/>
                             </content>
                         </Tab>
                         <Tab id="callLogsTab" fx:id="callLogTab" styleClass="tabs" text="Call Logs">
                             <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="360.0">
-                                    <children>
-                                        <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="561.0" prefWidth="360.0" />
-                                    </children>
-                                </AnchorPane>
+                                <fx:include source="tabs/call-log-tab.fxml"/>
                             </content>
                         </Tab>
                     </tabs>
@@ -175,49 +34,58 @@
                     <children>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0" prefWidth="120.0" text="|||" />
+                                <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0"
+                                        prefWidth="120.0" text="|||"/>
                             </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0" prefWidth="121.0" text="O" />
+                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0"
+                                        prefWidth="121.0" text="O"/>
                             </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                             <children>
-                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
+                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0"
+                                        prefWidth="120.0" text="&lt;"/>
                             </children>
                         </Pane>
                     </children>
                 </HBox>
             </bottom>
             <top>
-                <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;"
+                      BorderPane.alignment="CENTER">
                     <children>
-                        <Label layoutX="11.0" layoutY="1.0" text="17:32" />
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="51.0" pickOnBounds="true" preserveRatio="true">
+                        <Label layoutX="11.0" layoutY="1.0" text="17:32"/>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="51.0" pickOnBounds="true"
+                                   preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-whatsapp-32.png" />
+                                <Image url="@../images/icons8-whatsapp-32.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="72.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="72.0" pickOnBounds="true"
+                                   preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-youtube-30.png" />
+                                <Image url="@../images/icons8-youtube-30.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="273.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="273.0" layoutY="-1.0" pickOnBounds="true"
+                                   preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-signal-48.png" />
+                                <Image url="@../images/icons8-signal-48.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="308.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="308.0" layoutY="-1.0" pickOnBounds="true"
+                                   preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-signal-48.png" />
+                                <Image url="@../images/icons8-signal-48.png"/>
                             </image>
                         </ImageView>
-                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="341.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="341.0" layoutY="-1.0" pickOnBounds="true"
+                                   preserveRatio="true">
                             <image>
-                                <Image url="@../images/icons8-battery-level-48.png" />
+                                <Image url="@../images/icons8-battery-level-48.png"/>
                             </image>
                         </ImageView>
                     </children>

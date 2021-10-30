@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="com.example.emulator_project.controllers.tabs.CallLogTabController"
+            minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="360.0">
+    <children>
+        <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="561.0" prefWidth="360.0"/>
+    </children>
+</AnchorPane>
+
