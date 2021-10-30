@@ -1,4 +1,4 @@
-package com.example.emulator_project.api;
+package com.example.emulator_project.db_api;
 
 
 import java.sql.*;
@@ -596,7 +596,7 @@ public class SQLiteDBHandler {
     }
 
     public static class Queries {
-        public static final String DB_CONNECTION_STRING = "jdbc:sqlite:C:/Users/Axornam/Projects/emulator_project/src/main/java/com/example/emulator_project/db/android_phone.db";
+        public static final String DB_CONNECTION_STRING = "jdbc:sqlite:./db/android_phone.db";
         public static final String CREATE_PHONEBOOK_TABLES = String.format("CREATE TABLE IF NOT EXISTS phonebook(id INTEGER,name VARCHAR(20),phone VARCHAR(20) UNIQUE NOT NULL,image VARCHAR(255),PRIMARY KEY(id))");
         public static final String CREATE_CALL_LOGS_TABLES = String.format("CREATE TABLE IF NOT EXISTS call_log(log_id INTEGER,log_phone VARCHAR(20) NOT NULL,date VARCHAR(255) NOT NULL,time VARCHAR(10) NOT NULL,category VARCHAR(10) NOT NULL,PRIMARY KEY(log_id))");
         public static final String CREATE_MESSAGES_TABLES = String.format("CREATE TABLE IF NOT EXISTS message(msg_id INTEGER,body VARCHAR(255) NOT NULL,date VARCHAR(255) NOT NULL,time VARCHAR(10),receiver VARCHAR(10),PRIMARY KEY(msg_id))");
