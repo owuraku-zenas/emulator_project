@@ -2,8 +2,10 @@ package com.example.emulator_project.controllers;
 
 import com.example.emulator_project.controllers.base.NavigationController;
 import com.example.emulator_project.utils.SceneManager;
+import com.example.emulator_project.utils.TabType;
 import com.example.emulator_project.utils.ViewType;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.input.MouseEvent;
 
 public class HomeController extends NavigationController {
@@ -11,13 +13,17 @@ public class HomeController extends NavigationController {
 
     @FXML
     public void openTimeView(MouseEvent mouseEvent) {
-        sm.switchSceneFromEvent(mouseEvent, ViewType.TIME_VIEW);
+        FXMLLoader fx = sm.switchSceneFromEvent(mouseEvent, ViewType.TIME_VIEW);
+        TimeCalendarController tController = fx.getController();
+        tController.switchTab(TabType.ALARM_TIME_TAB);
         sm.loadScene();
     }
 
     @FXML
     public void openCalendarView(MouseEvent mouseEvent) {
-        sm.switchSceneFromEvent(mouseEvent, ViewType.CALENDAR_VIEW);
+        FXMLLoader fx = sm.switchSceneFromEvent(mouseEvent, ViewType.TIME_VIEW);
+        TimeCalendarController tController = fx.getController();
+        tController.switchTab(TabType.CALENDAR_TAB);
         sm.loadScene();
     }
 
