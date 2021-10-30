@@ -1,5 +1,6 @@
 package com.example.emulator_project.controllers;
 
+import com.example.emulator_project.controllers.base.NavigationController;
 import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.TabType;
 import com.example.emulator_project.utils.ViewType;
@@ -25,7 +26,7 @@ public class CallViewController extends NavigationController {
         // Switch View to Logs
         ((ContactsController) fx.getController()).switchTab(TabType.CALL_LOG_TAB);
         // Append Caller Id (Scene) to recents UI
-        sm.load();
+        sm.loadScene();
 
         // Add caller Id to call logs DB
 

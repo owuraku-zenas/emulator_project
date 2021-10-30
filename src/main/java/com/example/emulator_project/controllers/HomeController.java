@@ -1,5 +1,6 @@
 package com.example.emulator_project.controllers;
 
+import com.example.emulator_project.controllers.base.NavigationController;
 import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.ViewType;
 import javafx.fxml.FXML;
@@ -11,30 +12,30 @@ public class HomeController extends NavigationController {
     @FXML
     public void openTimeView(MouseEvent mouseEvent) {
         sm.switchSceneFromEvent(mouseEvent, ViewType.TIME_VIEW);
-        sm.load();
+        sm.loadScene();
     }
 
     @FXML
     public void openCalendarView(MouseEvent mouseEvent) {
         sm.switchSceneFromEvent(mouseEvent, ViewType.CALENDAR_VIEW);
-        sm.load();
+        sm.loadScene();
     }
 
     @FXML
     public void openCallView(MouseEvent mouseEvent) {
         sm.switchSceneFromEvent(mouseEvent, ViewType.CONTACT_VIEW);
-        sm.load();
+        sm.loadScene();
     }
 
     @FXML
     public void openSMSView(MouseEvent mouseEvent) {
         sm.switchSceneFromEvent(mouseEvent, ViewType.SMS_VIEW);
-        sm.load();
+        sm.loadScene();
     }
 
     @FXML
     public void openMenuView(MouseEvent mouseEvent) {
         sm.switchSceneFromEvent(mouseEvent, ViewType.MENU_VIEW);
-        sm.load();
+        sm.loadScene();
     }
 }

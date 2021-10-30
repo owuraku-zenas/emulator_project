@@ -1,6 +1,6 @@
 package com.example.emulator_project;
 
-import com.example.emulator_project.api.SQLiteDBHandler;
+import com.example.emulator_project.db_api.SQLiteDBHandler;
 import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.ViewType;
 import javafx.application.Application;
@@ -21,8 +21,7 @@ public class MainApplication extends Application {
         SceneManager sm = SceneManager.getInstance().setContext(MainApplication.class);
         sm.setStage(stage);
         sm.setSceneFromView(ViewType.HOME_VIEW);
-        sm.load();
-
+        sm.loadScene();
     }
 
     public static void main(String[] args) {

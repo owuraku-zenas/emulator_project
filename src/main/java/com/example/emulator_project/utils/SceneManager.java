@@ -1,13 +1,10 @@
 package com.example.emulator_project.utils;
 
-import com.example.emulator_project.controllers.ContactItemController;
-import com.example.emulator_project.controllers.ContactsController;
 import javafx.application.Application;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -22,15 +19,6 @@ public class SceneManager {
     private SceneManager() {
     }
 
-    private void setCurrentScene(Scene scene) {
-        this.currentScene = scene;
-    }
-
-    private Stage getStageFromEvent(Event e) {
-        Stage root = (Stage) ((Node) e.getSource()).getScene().getWindow();
-        return root;
-    }
-
     public static SceneManager getInstance() {
         if (sceneManagerInstance == null) {
             sceneManagerInstance = new SceneManager();
@@ -38,8 +26,19 @@ public class SceneManager {
         return sceneManagerInstance;
     }
 
+
+    private Stage getStageFromEvent(Event e) {
+        Stage root = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        return root;
+    }
+
     public Scene getCurrentScene() {
         return this.currentScene;
+    }
+
+    public SceneManager setContext(Class<? extends Application> applicationContext) {
+        this.context = (applicationContext);
+        return this;
     }
 
     public FXMLLoader setSceneFromView(ViewType view) {
@@ -62,43 +61,32 @@ public class SceneManager {
             } else {
             }
 
-            this.setCurrentScene(new Scene(nextFXML.load(), 360, 680));
+            // set the current scene to a new scene with the loaded fxml file
+            this.currentScene = new Scene(nextFXML.load(), 360, 680);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        // return the current FXMLLoader object in the case of need
         return nextFXML;
     }
 
-
-    public AnchorPane getTemplateFromViewType(TemplateType template, String name, String phone, String image) {
-//        FXMLLoader fx = null;
+    public FXMLLoader getTemplateFromViewType(TemplateType template) {
         try {
             if (template == TemplateType.ADD_NEW_CONTACT) {
-                return new FXMLLoader(this.context.getResource("templates/add-new-contact.fxml")).load();
+                return new FXMLLoader(this.context.getResource("views/templates/add-new-contact.fxml"));
             } else if (template == TemplateType.CONTACT_ITEM) {
-                FXMLLoader fx = new FXMLLoader(this.context.getResource("templates/contact-item.fxml"));
-//                ContactsController cci = (ContactsController) fx.getController();
-//                if (cci == null) {
-//                    System.out.println("No Controller Found for Contact Item");
-//                } else {
-//                    System.out.println("Controller Connected to XML File");
-//                    cci.addDetails(name, phone, image);
-//                }
-                return fx.load();
-
+                return new FXMLLoader(this.context.getResource("views/templates/contact-item.fxml"));
             } else if (template == TemplateType.LOG_ITEM) {
-                return new FXMLLoader(this.context.getResource("templates/log-item.fxml")).load();
+                return new FXMLLoader(this.context.getResource("views/templates/log-item.fxml"));
             } else if (template == TemplateType.SMS_ITEM) {
-                return new FXMLLoader(this.context.getResource("templates/sms-item.fxml")).load();
+                return new FXMLLoader(this.context.getResource("views/templates/sms-item.fxml"));
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-//        return fx;
         return null;
     }
 
@@ -106,20 +94,14 @@ public class SceneManager {
         this.mainStage = stage;
     }
 
-    public void load() {
+    public void loadScene() {
         this.mainStage.setScene(this.getCurrentScene());
         this.mainStage.show();
     }
 
     public FXMLLoader switchSceneFromEvent(Event event, ViewType view) {
-        Stage stage = getStageFromEvent(event);
+        Stage stage = this.getStageFromEvent(event);
         this.setStage(stage);
-        FXMLLoader fx = this.setSceneFromView(view);
-        return fx;
-    }
-
-    public SceneManager setContext(Class<? extends Application> applicationContext) {
-        this.context = (applicationContext);
-        return this;
+        return this.setSceneFromView(view); // returns an FXMLLoader object
     }
 }
