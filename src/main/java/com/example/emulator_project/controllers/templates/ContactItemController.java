@@ -1,9 +1,10 @@
-package com.example.emulator_project.controllers;
+package com.example.emulator_project.controllers.templates;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class ContactItemController {
     @FXML
@@ -26,5 +27,9 @@ public class ContactItemController {
     @FXML
     public void setContactImage(String imageURl) {
         contactImage.setImage(new Image(imageURl));
+    }
+
+    public void handleClick(MouseEvent mouseEvent) {
+        System.out.println("Contact Item:" + contactName.getText());
     }
 }
