@@ -5,13 +5,12 @@
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="81.0" prefWidth="246.0"
-            style="-fx-background-color: lightblue; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/17"
-            fx:controller="com.example.emulator_project.controllers.ContactsController"
->
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="contactItem" onMouseClicked="#handleClick" prefHeight="81.0"
+            prefWidth="246.0" style="-fx-background-color: lightblue; -fx-border-radius: 10px;"
+            xmlns="http://javafx.com/javafx/11.0.2"
+            fx:controller="com.example.emulator_project.controllers.templates.ContactItemController">
     <children>
         <Label fx:id="contactName" layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="163.0" text="User Name"
                AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
@@ -23,7 +22,7 @@
                    pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="14.0"
                    AnchorPane.topAnchor="2.0">
             <image>
-                <Image url="@../images/avatar.png"/>
+                <Image url="@../../images/avatar.png"/>
             </image>
         </ImageView>
         <Label fx:id="contactNumber" layoutX="14.0" layoutY="40.0" prefHeight="28.0" prefWidth="163.0"
