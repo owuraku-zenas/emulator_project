@@ -13,23 +13,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="android_phone [2]" uuid="ee3ab369-7032-4948-8e92-9e151dc54391">
+    <data-source source="LOCAL" name="eyePhone" uuid="265b442f-f4a9-4168-bd0d-46f4f8845257">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Axornam\Projects\emulator_project\target\classes\com\example\emulator_project\db_api\android_phone.db</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="android_phone [3]" uuid="64fbd3c2-b59c-44cd-bbb3-525377b21775">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Axornam\Projects\emulator_project\db\android_phone.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Axornam\Projects\emulator_project\db\eyePhone.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
