@@ -53,7 +53,7 @@ public class SceneManager {
             } else if (view == ViewType.CALL_VIEW) {
                 nextFXML = new FXMLLoader(this.context.getResource("views/call-view.fxml"));
             } else if (view == ViewType.CONTACT_VIEW) {
-                nextFXML = new FXMLLoader(this.context.getResource("views/contact-view.fxml"));
+                nextFXML = new FXMLLoader(this.context.getResource("views/phone-view.fxml"));
             } else if (view == ViewType.SMS_VIEW) {
                 nextFXML = new FXMLLoader(this.context.getResource("views/sms-view.fxml"));
             }

@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 
-public class ContactsController extends NavigationController {
+public class PhoneController extends NavigationController {
 
     @FXML
     private TabPane tabPane;
