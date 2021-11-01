@@ -1,0 +1,11 @@
+.nav-button {
+    -fx-border: none;
+    -fx-background-color: transparent;
+    -fx-padding: 15px 38px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    /*display: inline-block;*/
+    /*font-size: 16px;*/
+    -fx-cursor: pointer;
+}
+

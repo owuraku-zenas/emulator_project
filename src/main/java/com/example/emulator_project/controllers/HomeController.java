@@ -5,6 +5,7 @@ import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.ViewType;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 
 public class HomeController extends NavigationController {
     private final SceneManager sm = SceneManager.getInstance();
