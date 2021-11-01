@@ -9,6 +9,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
@@ -26,17 +29,19 @@ public class ContactsTabController {
     private VBox contactsPaneVBox;
     @FXML
     private Button newContactButton;
+    @FXML
+    private TextField contactSearchField;
 
     private SceneManager sm = SceneManager.getInstance();
     private SQLiteDBHandler db = SQLiteDBHandler.getInstance();
     private ArrayList<ArrayList<String>> users = new ArrayList<ArrayList<String>>();
 
     public ContactsTabController() {
+        fetchAndStoreContacts();
     }
 
     @FXML
     public void initialize() {
-        fetchAndStoreContacts();
         fetchAndPopulateContacts();
     }
 
@@ -127,5 +132,33 @@ public class ContactsTabController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void makeNewSearch(KeyEvent keyEvent) {
+        contactsPaneVBox.getChildren().removeIf(c -> true);
+
+        if (contactSearchField.getText().equals("")) {
+            fetchAndPopulateContacts();
+        } else {
+            users.forEach(user -> {
+                if (user.get(1).startsWith(contactSearchField.getText()))
+                    appendItemWithDetails(user.get(0), user.get(1), user.get(2));
+
+                if (user.get(0).startsWith(contactSearchField.getText()))
+                    appendItemWithDetails(user.get(0), user.get(1), user.get(2));
+            });
+        }
+    }
+
+    public void makeStringSearch(MouseEvent mouseEvent) {
+        if (contactSearchField.getText().equals("")) return;
+
+        users.forEach(user -> {
+            if (user.get(0).equals(contactSearchField.getText()) || user.get(1).equals(contactSearchField.getText())) {
+                contactsPaneVBox.getChildren().removeIf(c -> true);
+                appendItemWithDetails(user.get(0), user.get(1), user.get(2));
+            }
+        });
+
     }
 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="680" prefWidth="360" xmlns="http://javafx.com/javafx/17"
+            fx:controller="com.example.emulator_project.controllers.PhoneController">
+    <children>
+        <BorderPane layoutX="-4.0" prefHeight="680" prefWidth="367.0">
+            <center>
+                <TabPane fx:id="tabPane" prefHeight="488.0" prefWidth="305.0" tabClosingPolicy="UNAVAILABLE"
+                         tabMinWidth="103.0" BorderPane.alignment="CENTER">
+                    <tabs>
+                        <Tab id="dialerTab" fx:id="dialerTab" styleClass="tabs" text="Dialer">
+                            <content>
+                                <fx:include source="tabs/dialer-tab.fxml"/>
+                            </content>
+                        </Tab>
+                        <Tab id="contactsTab" fx:id="contactsTab" styleClass="tabs" text="Contacts">
+                            <content>
+                                <fx:include source="tabs/contacts-tab.fxml"/>
+                            </content>
+                        </Tab>
+                        <Tab id="callLogsTab" fx:id="callLogTab" styleClass="tabs" text="Call Logs">
+                            <content>
+                                <fx:include source="tabs/call-log-tab.fxml"/>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </center>
+            <bottom>
+                <HBox prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="4.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0"
+                                        prefWidth="120.0" text="|||"/>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0"
+                                        prefWidth="121.0" text="O"/>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0"
+                                        prefWidth="120.0" text="&lt;"/>
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+            </bottom>
+            <top>
+                <Pane prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: green;"
+                      BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="11.0" layoutY="1.0" text="17:32"/>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="51.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-whatsapp-32.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="72.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-youtube-30.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="273.0" layoutY="-1.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-signal-48.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="308.0" layoutY="-1.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-signal-48.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="341.0" layoutY="-1.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-battery-level-48.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -18,6 +18,7 @@ public class DialerTabController {
     public void handleButtonClick(ActionEvent event) {
         Button button = (Button) event.getTarget();
         String inputString = dialInputField.getText() + button.getText();
+
         if (dialInputField != null) {
             dialInputField.setText(inputString);
             System.out.println(inputString);
@@ -27,9 +28,17 @@ public class DialerTabController {
     }
 
     public void makePhoneCall(ActionEvent event) {
+        if (this.dialInputField.getText().equals("")) return;
+
         FXMLLoader fx = sm.switchSceneFromEvent(event, ViewType.CALL_VIEW);
-        ((CallViewController) fx.getController()).setCallerID(dialInputField.getText());
+        ((CallViewController) fx.getController()).makePhoneCall(dialInputField.getText());
         sm.loadScene();
     }
 
+    public void deleteOneCharacter(ActionEvent event) {
+        if (!dialInputField.getText().equals("")) {
+            int s = dialInputField.getText().length();
+            dialInputField.setText(dialInputField.getText().substring(0, s - 1));
+        }
+    }
 }
