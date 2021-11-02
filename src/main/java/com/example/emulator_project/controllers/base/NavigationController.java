@@ -11,8 +11,8 @@ public class NavigationController {
     @FXML
     public void openTaskView(ActionEvent event) {
         System.out.println("Opening Task View");
-        sm.switchSceneFromEvent(event, ViewType.TASK_VIEW);
-        sm.loadScene();
+//        sm.switchSceneFromEvent(event, ViewType.TASK_VIEW);
+//        sm.loadScene();
     }
 
     @FXML

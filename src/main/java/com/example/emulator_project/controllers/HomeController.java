@@ -42,7 +42,8 @@ public class HomeController extends NavigationController {
 
     @FXML
     public void openMenuView(MouseEvent mouseEvent) {
-        sm.switchSceneFromEvent(mouseEvent, ViewType.MENU_VIEW);
-        sm.loadScene();
+//        sm.switchSceneFromEvent(mouseEvent, ViewType.MENU_VIEW);
+//        sm.loadScene();
+        System.out.println("Menu View");
     }
 }
