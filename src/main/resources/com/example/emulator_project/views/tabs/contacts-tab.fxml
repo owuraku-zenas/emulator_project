@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.tabs.ContactsTabController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="372.0" stylesheets="@../../styles/contact.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.tabs.ContactsTabController">
     <children>
         <VBox layoutX="4.0" prefHeight="586.0" prefWidth="363.0">
             <children>
@@ -21,16 +21,16 @@
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </padding>
                 </HBox>
-                <ScrollPane fx:id="contactsPane" hbarPolicy="NEVER" prefHeight="501.0" prefWidth="363.0" vbarPolicy="NEVER" VBox.vgrow="NEVER">
+                <ScrollPane fx:id="contactsPane" hbarPolicy="NEVER" prefHeight="501.0" prefWidth="363.0" style="-fx-background-color: white;" vbarPolicy="NEVER" VBox.vgrow="NEVER">
                     <content>
-                        <VBox fx:id="contactsPaneVBox" prefHeight="489.0" prefWidth="359.0" spacing="5.0">
+                        <VBox fx:id="contactsPaneVBox" prefHeight="489.0" prefWidth="359.0" spacing="5.0" style="-fx-background-color: white;">
                             <padding>
                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                             </padding>
                         </VBox>
                     </content>
                 </ScrollPane>
-                <Button fx:id="newContactButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createNewContact" prefHeight="40.0" prefWidth="343.0" text="Add New Contact +">
+                <Button fx:id="newContactButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createNewContact" prefHeight="40.0" prefWidth="343.0" styleClass="add-contact-btn" text="Add New Contact +">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin>

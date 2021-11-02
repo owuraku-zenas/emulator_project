@@ -1,11 +1,11 @@
-.nav-button {
+.add-contact-btn {
+    -fx-background-color: #444;
     -fx-border: none;
-    -fx-background-color: transparent;
-    -fx-padding: 15px 38px;
+    -fx-color: white;
+    /*-fx-padding: 15px 32px;*/
     -fx-text-align: center;
     -fx-text-decoration: none;
-    /*display: inline-block;*/
-    /*font-size: 16px;*/
+    /*-fx-display: inline-block;*/
+    /*-fx-margin: 4px 2px;*/
     -fx-cursor: pointer;
 }
-
