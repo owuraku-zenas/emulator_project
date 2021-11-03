@@ -11,7 +11,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="680.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.TimeCalendarController">
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="680.0" prefWidth="360.0" stylesheets="@../styles/calendar-time.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.TimeCalendarController">
     <children>
         <BorderPane prefHeight="680.0" prefWidth="360.0">
             <top>
@@ -47,21 +48,30 @@
                 </Pane>
             </top>
             <bottom>
-                <HBox prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                <HBox fx:id="nav" prefHeight="45.0" prefWidth="360.0" BorderPane.alignment="CENTER">
                     <children>
-                        <Pane prefHeight="200.0" prefWidth="200.0">
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="btn-pane">
                             <children>
-                                <Button layoutY="-1.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0" prefWidth="120.0" text="|||" />
+                                <Button layoutY="-2.0" mnemonicParsing="false" onAction="#openTaskView" prefHeight="45.0" prefWidth="120.0" styleClass="nav-button" text="|||" textFill="WHITE">
+                                    <font>
+                                        <Font size="19.0" />
+                                    </font></Button>
                             </children>
                         </Pane>
-                        <Pane prefHeight="200.0" prefWidth="200.0">
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="btn-pane">
                             <children>
-                                <Button layoutY="-1.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0" prefWidth="121.0" text="O" />
+                                <Button layoutY="-2.0" mnemonicParsing="false" onAction="#openHome" prefHeight="45.0" prefWidth="121.0" styleClass="nav-button" text="O" textFill="WHITE">
+                                    <font>
+                                        <Font size="19.0" />
+                                    </font></Button>
                             </children>
                         </Pane>
-                        <Pane prefHeight="200.0" prefWidth="200.0">
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="btn-pane">
                             <children>
-                                <Button layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="120.0" text="&lt;" />
+                                <Button layoutX="1.0" layoutY="-2.0" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="120.0" styleClass="nav-button" text="&lt;" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="19.0" />
+                                    </font></Button>
                             </children>
                         </Pane>
                     </children>

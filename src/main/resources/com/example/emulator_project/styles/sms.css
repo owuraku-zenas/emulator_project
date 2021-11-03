@@ -1,10 +1,4 @@
-#home {
-    -fx-background-image: url("../images/back.jpeg");
-    -fx-background-size: auto 682;
-    -fx-background-repeat: no-repeat;
-}
-
-.button {
+.nav-button {
     -fx-border: none;
     -fx-background-color: transparent;
     -fx-padding: 15px 38px;
@@ -17,4 +11,14 @@
 
 .btn-pane {
     -fx-background-color: rgba(100,100,100, 0.7);
+}
+
+.left-message {
+    -fx-background-color: #6ca5c2;
+    -fx-background-radius: 40 40 40 0;
+}
+
+.right-message {
+    -fx-background-color: #89CFF0;
+    -fx-background-radius: 40 40 0 40;
 }

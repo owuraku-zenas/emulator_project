@@ -1,0 +1,24 @@
+.text-field {
+    -fx-border: none;
+}
+
+.call-btn {
+    -fx-background-color: green;
+    -fx-background-radius: 50%;
+    -fx-text-fill: #ffffff;
+}
+
+.dial-btn {
+    -fx-border: none;
+    -fx-background-radius: 50%;
+    -fx-background-color: transparent;
+}
+
+.dial-btn:hover {
+    -fx-border: none;
+    -fx-background-color: #999;
+}
+
+#deleteCharButton {
+    -fx-background-color: #666;
+}

@@ -10,10 +10,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class DialerTabController {
+    public Button deleteCharButton;
     @FXML
     private TextField dialInputField;
 
-    private SceneManager sm = SceneManager.getInstance();
+    private final SceneManager sm = SceneManager.getInstance();
 
     public void handleButtonClick(ActionEvent event) {
         Button button = (Button) event.getTarget();
@@ -23,6 +24,7 @@ public class DialerTabController {
             dialInputField.setText(inputString);
             System.out.println(inputString);
         } else {
+            assert dialInputField != null;
             System.out.println(dialInputField.toString() + " is null");
         }
     }
@@ -35,7 +37,7 @@ public class DialerTabController {
         sm.loadScene();
     }
 
-    public void deleteOneCharacter(ActionEvent event) {
+    public void deleteOneCharacter() {
         if (!dialInputField.getText().equals("")) {
             int s = dialInputField.getText().length();
             dialInputField.setText(dialInputField.getText().substring(0, s - 1));

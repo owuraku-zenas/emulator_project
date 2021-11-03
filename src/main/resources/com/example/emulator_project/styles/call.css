@@ -8,3 +8,16 @@
     /*font-size: 16px;*/
     -fx-cursor: pointer;
 }
+.btn-pane {
+    -fx-background-color: rgba(100,100,100, 0.7);
+}
+
+.call-btn {
+    -fx-background-color: #CC3C3C;
+    -fx-background-radius: 50%;
+    -fx-text-fill: #ffffff;
+}
+
+.dialer {
+    -fx-background-image: url("../images/dialpad.png");
+}
