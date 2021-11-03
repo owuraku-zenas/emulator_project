@@ -9,4 +9,5 @@ public enum ViewType {
     CALENDAR_VIEW,
     MENU_VIEW,
     TASK_VIEW,
+    CREATE_CONTACT_VIEW,
 }

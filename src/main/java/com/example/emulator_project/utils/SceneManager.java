@@ -56,6 +56,8 @@ public class SceneManager {
                 nextFXML = new FXMLLoader(this.context.getResource("views/phone-view.fxml"));
             } else if (view == ViewType.SMS_VIEW) {
                 nextFXML = new FXMLLoader(this.context.getResource("views/sms-view.fxml"));
+            } else if (view == ViewType.CREATE_CONTACT_VIEW) {
+                nextFXML = new FXMLLoader(this.context.getResource("views/create-contact-view.fxml"));
             }
 
             // set the current scene to a new scene with the loaded fxml file
