@@ -1,0 +1,38 @@
+.btn {
+    -fx-background-color: #89CFF0;
+    -fx-border: none;
+    -fx-color: white;
+    /*-fx-padding: 15px 32px;*/
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    /*-fx-display: inline-block;*/
+    /*-fx-margin: 4px 2px;*/
+    -fx-cursor: pointer;
+}
+
+.nav-button {
+    -fx-border: none;
+    -fx-background-color: transparent;
+    -fx-padding: 15px 38px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    /*display: inline-block;*/
+    /*font-size: 16px;*/
+    -fx-cursor: pointer;
+}
+
+.btn-pane {
+    -fx-background-color: rgba(100,100,100, 0.7);
+}
+
+.discard-btn {
+    -fx-background-color: #d55;
+    -fx-border: none;
+    -fx-color: white;
+    /*-fx-padding: 15px 32px;*/
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    /*-fx-display: inline-block;*/
+    /*-fx-margin: 4px 2px;*/
+    -fx-cursor: pointer;
+}
