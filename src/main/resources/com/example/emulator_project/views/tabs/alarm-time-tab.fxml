@@ -23,7 +23,7 @@
                                 <Font size="14.0" />
                             </font>
                         </TextField>
-                        <Button fx:id="currenTime" mnemonicParsing="false" styleClass="btn" text="07:00:02 PM">
+                        <Button fx:id="currentTime" mnemonicParsing="false" styleClass="btn" text="07:00:02 PM">
                             <VBox.margin>
                                 <Insets bottom="10.0" />
                             </VBox.margin>
