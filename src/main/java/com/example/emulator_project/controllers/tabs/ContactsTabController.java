@@ -3,6 +3,7 @@ package com.example.emulator_project.controllers.tabs;
 import com.example.emulator_project.db_api.SQLiteDBHandler;
 import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.TemplateType;
+import com.example.emulator_project.utils.ViewType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,11 +17,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class ContactsTabController {
     @FXML
@@ -86,25 +85,32 @@ public class ContactsTabController {
     }
 
     public void createNewContact(ActionEvent event) {
-        Scanner sc = new Scanner(System.in);
-        // show new Contacts Modal
-        System.out.print("Enter your Name: ");
-        String name = sc.nextLine();
-        System.out.print("Enter you phone number: ");
-        String phone = sc.nextLine();
-        System.out.print("Enter the Image path: ");
-        String img = sc.nextLine();
+        // 1. Create a New Scene for Creating a Contact
+        FXMLLoader fx = sm.setSceneFromView(ViewType.CREATE_CONTACT_VIEW);
 
-        // get Name, Phone and Image from Modal
-
-        // Send details to database
-        Connection con = db.getConnection();
-
-        if (con != null) {
-            // if successful append to contacts pane
-            db.insertContact(name, phone, img);
-            appendItemWithDetails(name, phone, img);
-        }
+        sm.loadScene();
+//
+//        // get Name, Phone and Image from Modal
+//        // 2. Use the attached UI Controller to retrieve needed data
+//        // 3. Validate Input data
+//        Scanner sc = new Scanner(System.in);
+//        // show new Contacts Modal
+//        System.out.print("Enter your Name: ");
+//        String name = sc.nextLine();
+//        System.out.print("Enter you phone number: ");
+//        String phone = sc.nextLine();
+//        System.out.print("Enter the Image path: ");
+//        String img = sc.nextLine();
+//
+//        // Send details to database
+//        // 4. Pass the needed data into the database
+//        Connection con = db.getConnection();
+//
+//        if (con != null) {
+//            // if successful append to contacts pane
+//            db.insertContact(name, phone, img);
+//            appendItemWithDetails(name, phone, img);
+//        }
     }
 
     private void appendItemWithDetails(String name, String phone, String img) {
