@@ -1,6 +1,8 @@
 package com.example.emulator_project.controllers.tabs;
 
+import com.example.emulator_project.MainApplication;
 import com.example.emulator_project.db_api.SQLiteDBHandler;
+import com.example.emulator_project.utils.ResolveImagePath;
 import com.example.emulator_project.utils.SceneManager;
 import com.example.emulator_project.utils.TemplateType;
 import javafx.event.ActionEvent;
@@ -21,6 +23,7 @@ public class CallLogTabController {
     private VBox callLogVbox;
 
     private SceneManager sm = SceneManager.getInstance();
+    private ResolveImagePath im = ResolveImagePath.getInstance().setContext(MainApplication.class);
     private SQLiteDBHandler db = SQLiteDBHandler.getInstance();
     private ArrayList<ArrayList<String>> logs = new ArrayList<>();
 
@@ -86,11 +89,11 @@ public class CallLogTabController {
 
             String callTypeIcon = "";
             if (category.equals("missed")) {
-                callTypeIcon = "missedCall.png";
+                callType.setImage(im.resolve("missed"));
             } else if (category.equals("dialed")) {
-                callTypeIcon = "callout.png";
+                callType.setImage(im.resolve("accepted"));
             } else {
-                callTypeIcon = "incall.png";
+                callType.setImage(im.resolve("missed"));
             }
 
 //            callType.setImage(new Image("../../images/icons/" + callTypeIcon));
