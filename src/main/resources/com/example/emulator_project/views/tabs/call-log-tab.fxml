@@ -7,15 +7,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.tabs.CallLogTabController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="367.0" stylesheets="@../../styles/call-log.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emulator_project.controllers.tabs.CallLogTabController">
     <children>
         <VBox prefHeight="583.0" prefWidth="367.0">
             <children>
                 <HBox alignment="CENTER" prefHeight="49.0" prefWidth="360.0" spacing="10.0">
                     <children>
-                        <Button fx:id="missedCallsButton" mnemonicParsing="false" onAction="#fetchAllMissedCall" text="Missed" />
-                        <Button fx:id="acceptedCallsButton" mnemonicParsing="false" onAction="#fetchAllAcceptedCalls" text="Accepted" />
-                        <Button fx:id="allCallsButton" mnemonicParsing="false" onAction="#fetchAllCalls" text="All" />
+                        <Button fx:id="missedCallsButton" mnemonicParsing="false" onAction="#fetchAllMissedCall" styleClass="call-type-btn" text="Missed" />
+                        <Button fx:id="acceptedCallsButton" mnemonicParsing="false" onAction="#fetchAllAcceptedCalls" styleClass="call-type-btn" text="Accepted" />
+                        <Button fx:id="allCallsButton" mnemonicParsing="false" onAction="#fetchAllCalls" styleClass="call-type-btn" text="All" />
                     </children>
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

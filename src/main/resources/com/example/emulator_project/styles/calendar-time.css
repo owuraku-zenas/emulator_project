@@ -1,10 +1,4 @@
-#home {
-    -fx-background-image: url("../images/back.jpeg");
-    -fx-background-size: auto 682;
-    -fx-background-repeat: no-repeat;
-}
-
-.button {
+.nav-button {
     -fx-border: none;
     -fx-background-color: transparent;
     -fx-padding: 15px 38px;

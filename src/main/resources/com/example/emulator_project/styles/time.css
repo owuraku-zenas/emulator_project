@@ -10,11 +10,7 @@
     -fx-cursor: pointer;
 }
 
-.text-field {
-    /*-fx-border: 0.5px solid red;*/
-    -fx-border-radius: 8px;
-}
-
-.btn-pane {
-    -fx-background-color: rgba(100,100,100, 0.7);
+.btn:hover {
+    -fx-border: none;
+    -fx-background-color: #6ea6c0;
 }

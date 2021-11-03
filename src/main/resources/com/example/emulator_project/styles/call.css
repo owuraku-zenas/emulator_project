@@ -1,10 +1,4 @@
-#home {
-    -fx-background-image: url("../images/back.jpeg");
-    -fx-background-size: auto 682;
-    -fx-background-repeat: no-repeat;
-}
-
-.button {
+.nav-button {
     -fx-border: none;
     -fx-background-color: transparent;
     -fx-padding: 15px 38px;
@@ -14,7 +8,16 @@
     /*font-size: 16px;*/
     -fx-cursor: pointer;
 }
-
 .btn-pane {
     -fx-background-color: rgba(100,100,100, 0.7);
+}
+
+.call-btn {
+    -fx-background-color: #CC3C3C;
+    -fx-background-radius: 50%;
+    -fx-text-fill: #ffffff;
+}
+
+.dialer {
+    -fx-background-image: url("../images/dialpad.png");
 }
